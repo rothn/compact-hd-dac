@@ -1,0 +1,104 @@
+*$
+*  TPS7A4700 Model
+*****************************************************************************
+*  (C) Copyright 2012 Texas Instruments Incorporated. All rights reserved.
+*****************************************************************************
+** This model is designed as an aid for customers of Texas Instruments.
+** TI and its licensors and suppliers make no warrenties, either expressed
+** or implied, with respect to this model, including the warranties of 
+** merchantability or fitness for a particular purpose.  The model is
+** provided solely on an "as is" basis.  The entire risk as to its quality
+** and performance is with the customer
+*****************************************************************************
+*
+** Released by: WEBENCH Design Center, Texas Instruments Inc.
+* Part: TPS7A4700
+* Date: 06/08/2012
+* Model Type: TRANSIENT
+* Simulator: PSPICE
+* Simulator Version: 16.0.0.p001
+* EVM Order Number: 
+* EVM Users Guide: SLVU741 - JUNE 2012
+* Datasheet: SBVS204 - JUNE 2012
+*
+* Model Version: Final 1.00
+*
+*****************************************************************************
+*
+* Updates:
+*
+* Final 1.00
+* Release to Web.
+*
+*****************************************************************************
+* source TPS7A4700
+.SUBCKT TPS7A4700 OUT_0 SENSE 6P4V2 6P4V1 3P2V GND 1P6V 0P8V
++ 0P4V 0P2V 0P1V EN NR IN_0 IN_1 OUT_1
+R_TPS7A4700_ROUT         OUT_0 OUT_1  1m  
+R_TPS7A4700_R_BIG3         0P4V 0  1G  
+R_TPS7A4700_RNR         NR 0  1MEG  
+R_TPS7A4700_R_BIG2         0P2V 0  1G  
+R_TPS7A4700_RP2         TPS7A4700_N222934 6P4V1  50k  
+R_TPS7A4700_RP5         TPS7A4700_N222934 0P8V  400k  
+E_TPS7A4700_U1_ABM4         TPS7A4700_U1_N283078 0 VALUE {
++  V(TPS7A4700_U1_N05348)  
++ * V(OUT_1)  
++ / (V(TPS7A4700_N222934) + 1e-6)  }
+X_TPS7A4700_U1_U3         TPS7A4700_U1_N277354 IN_1 TPS7A4700_U1_N278498
++  COMP_HYS_BASIC PARAMS:  VHYS=0.05 TD=0.00 TT=2E-9
+R_TPS7A4700_U1_R1         GND TPS7A4700_U1_N05348  1G  
+R_TPS7A4700_U1_R_ref2         TPS7A4700_U1_N283078 TPS7A4700_U1_N05382  1k  
+C_TPS7A4700_U1_C_ref2         TPS7A4700_U1_N05382 0  1p  
+V_TPS7A4700_U1_Venable         TPS7A4700_U1_N280665 0 1.35
+V_TPS7A4700_U1_Vuvlo         TPS7A4700_U1_N278498 0 2.67
+R_TPS7A4700_U1_R_ref3         TPS7A4700_U1_N283349 TPS7A4700_N222524  1k  
+C_TPS7A4700_U1_C_ref3         TPS7A4700_N222524 0  1p  
+X_TPS7A4700_U1_U2         TPS7A4700_U1_N277283 EN TPS7A4700_U1_N280665
++  COMP_HYS_BASIC PARAMS:  VHYS=0.05 TD=0.00 TT=2E-9
+R_TPS7A4700_U1_R_ref1         TPS7A4700_U1_N282565 TPS7A4700_U1_N05348  1k  
+R_TPS7A4700_U1_R2         GND TPS7A4700_U1_N05382  1G  
+E_TPS7A4700_U1_ABM6         TPS7A4700_U1_N282565 0 VALUE { IF
++  (V(TPS7A4700_U1_N277354) > 0.51 & V(TPS7A4700_U1_N277283) > 0.51, 1.4, 0)    }
+C_TPS7A4700_U1_C_ref1         TPS7A4700_U1_N05348 0  1p  
+E_TPS7A4700_U1_ABM5         TPS7A4700_U1_N283349 0 VALUE {
++  MIN(V(TPS7A4700_U1_N05382),  
++ MAX(V(IN_1) - 0.300, 0))   }
+R_TPS7A4700_RP3         TPS7A4700_N222934 3P2V  100k  
+R_TPS7A4700_R_BIG4         0P8V 0  1G  
+R_TPS7A4700_R5         TPS7A4700_VZZ TPS7A4700_VYY  17m  
+E_TPS7A4700_ABM1         TPS7A4700_VYY 0 VALUE { MIN(V(TPS7A4700_VXX),
++  (V(TPS7A4700_VZZ)+0.0289))    }
+R_TPS7A4700_RIN         IN_0 IN_1  1m  
+R_TPS7A4700_R_BIG8         6P4V2 0  1G  
+R_TPS7A4700_R_BIG6         3P2V 0  1G  
+R_TPS7A4700_R_BIG7         6P4V1 0  1G  
+R_TPS7A4700_RP7         TPS7A4700_N222934 0P2V  1.6MEG  
+R_TPS7A4700_R1         TPS7A4700_VXX IN_1  3MEG  
+X_TPS7A4700_F1    TPS7A4700_VZZ OUT_1 IN_1 TPS7A4700_VYY TPS7A4700_TPS7A4700_F1
+R_TPS7A4700_RP6         TPS7A4700_N222934 0P4V  800k  
+R_TPS7A4700_R_BIG10         SENSE 0  1G  
+R_TPS7A4700_R2         TPS7A4700_N222524 TPS7A4700_VXX  435  
+R_TPS7A4700_RD1         SENSE TPS7A4700_N222934  228.6k  
+R_TPS7A4700_R_BIG1         0P1V 0  1G  
+C_TPS7A4700_C1         TPS7A4700_VXX IN_1  1.77p  
+C_TPS7A4700_C2         TPS7A4700_VXX TPS7A4700_N222524  1.33n  
+R_TPS7A4700_RP4         TPS7A4700_N222934 1P6V  200k  
+R_TPS7A4700_RP1         TPS7A4700_N222934 6P4V2  50k  
+R_TPS7A4700_RP8         TPS7A4700_N222934 0P1V  3.2MEG  
+R_TPS7A4700_R_BIG5         1P6V 0  1G
+.ENDS TPS7A4700
+
+.subckt TPS7A4700_TPS7A4700_F1 1 2 3 4  
+F_TPS7A4700_F1         3 4 VF_TPS7A4700_F1 1
+VF_TPS7A4700_F1         1 2 0V
+.ends TPS7A4700_TPS7A4700_F1
+
+.SUBCKT comp_hys_basic out inp inn 
++ PARAMS: 
++ vhys = 0.05 
++ td   = 0.00
++ tt   = 2e-9
+E1 n1   0 VALUE {IF(V(inp) + V(out)*vhys > V(inn), 1, 0)}
+R1 n1 out 10
+C1 out  0 { (td + 0.5*tt) / 6.93 }
+.ENDS comp_hys_basic
