@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "2025-10-29_05-54-35")(type "KiCad")(uri "${KIPRJMOD}/part_libraries/ul_ADP5071AREZ/KiCADv6/2025-10-29_05-54-35.kicad_sym")(options "")(descr ""))
+  (lib (name "LPD5030-223MRC")(type "KiCad")(uri "${KIPRJMOD}/part_libraries/LPD5030/LPD5030-223MRC.kicad_sym")(options "")(descr ""))
+)

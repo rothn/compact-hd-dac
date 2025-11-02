@@ -1,0 +1,76 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "387b6079-e547-4b62-84b5-51a54c04db0a")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 97.79 83.82)
+		(size 22.86 11.43)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "84bc8a83-6069-4115-bf8b-d3a0edc62c27")
+		(property "Sheetname" "amplifier_power"
+			(at 97.79 83.1084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "amplifier_power.kicad_sch"
+			(at 97.79 95.8346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "V_neg" output
+			(at 120.65 88.9 0)
+			(uuid "beba4e80-3821-4c95-81f8-5517002c2023")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "V_pos" output
+			(at 97.79 88.9 180)
+			(uuid "3f067b7b-c990-4aa9-a147-4b03e18c3189")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "dac_board"
+				(path "/387b6079-e547-4b62-84b5-51a54c04db0a"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
