@@ -4,10 +4,699 @@
 	(generator_version "9.0")
 	(uuid "387b6079-e547-4b62-84b5-51a54c04db0a")
 	(paper "A4")
-	(lib_symbols)
+	(lib_symbols
+		(symbol "Connector_Audio:AudioJack3_Ground"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "AudioJack3_Ground"
+				(at 0 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Audio Jack, 3 Poles (Stereo / TRS), Grounded Sleeve"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "audio jack receptacle stereo headphones phones TRS connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Jack*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "AudioJack3_Ground_0_1"
+				(rectangle
+					(start -5.08 -2.54)
+					(end -6.35 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.905 -2.54) (xy -1.27 -3.175) (xy -0.635 -2.54) (xy -0.635 0) (xy 2.54 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy 0.635 -3.175) (xy 1.27 -2.54) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 2.54 3.81)
+					(end -5.08 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 2.54) (xy -2.54 2.54) (xy -2.54 -2.54) (xy -3.175 -3.175) (xy -3.81 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "AudioJack3_Ground_1_1"
+				(pin passive line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "G"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 2.54 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "R"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "T"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:GNDA"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GNDA"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GNDA_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GNDA_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(junction
+		(at 109.22 115.57)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1862b179-c371-4b5b-8f62-697e96976cb6")
+	)
+	(junction
+		(at 111.76 118.11)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "de818b1d-c821-4aa7-8a73-2b94ef06dde6")
+	)
+	(wire
+		(pts
+			(xy 133.35 120.65) (xy 147.32 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b62c4e9-77e0-43e1-8791-37b2dc11910f")
+	)
+	(wire
+		(pts
+			(xy 109.22 139.7) (xy 115.57 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13628336-d517-41b1-b8d1-cf5903e4a637")
+	)
+	(wire
+		(pts
+			(xy 142.24 144.78) (xy 142.24 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "145c34f9-7ef6-43bf-9d1b-24f9ecd2e4b0")
+	)
+	(wire
+		(pts
+			(xy 109.22 115.57) (xy 115.57 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2134daf8-c55b-4dd0-b33b-3ca524fad8a8")
+	)
+	(wire
+		(pts
+			(xy 111.76 142.24) (xy 115.57 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "454e4241-8016-4c40-895a-8ba03f0b0565")
+	)
+	(wire
+		(pts
+			(xy 133.35 144.78) (xy 142.24 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4cc680b0-c8c6-4f7a-84ba-a2d7cc3140d2")
+	)
+	(wire
+		(pts
+			(xy 109.22 115.57) (xy 109.22 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "593e62e6-2811-42ae-800a-f54324d2cf11")
+	)
+	(wire
+		(pts
+			(xy 93.98 118.11) (xy 111.76 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "616027f0-b934-466d-ac0d-581a243f8d67")
+	)
+	(wire
+		(pts
+			(xy 142.24 134.62) (xy 147.32 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae39c744-074c-41ff-95b3-ec9918d09c4d")
+	)
+	(wire
+		(pts
+			(xy 147.32 137.16) (xy 147.32 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba8b2f55-3411-40a5-8706-316c36acf231")
+	)
+	(wire
+		(pts
+			(xy 147.32 120.65) (xy 147.32 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf45100d-42c7-469b-83d5-7508f8b895a9")
+	)
+	(wire
+		(pts
+			(xy 111.76 118.11) (xy 115.57 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c81ec876-6dce-4156-87bc-a811ad00d2d6")
+	)
+	(wire
+		(pts
+			(xy 111.76 118.11) (xy 111.76 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e68cb24c-c5c3-4e3b-ad22-ca4aecad0415")
+	)
+	(wire
+		(pts
+			(xy 93.98 115.57) (xy 109.22 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e7a02afb-e701-4a78-aff2-05b1273ca02e")
+	)
+	(symbol
+		(lib_id "Connector_Audio:AudioJack3_Ground")
+		(at 152.4 134.62 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0d864e13-e972-4110-ac4a-ff4e91a600ea")
+		(property "Reference" "J1"
+			(at 160.02 132.7149 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "AudioJack3_Ground"
+			(at 160.02 135.2549 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 152.4 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 152.4 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Audio Jack, 3 Poles (Stereo / TRS), Grounded Sleeve"
+			(at 152.4 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "S"
+			(uuid "ad30c35f-1bb0-4ee5-939c-3699969b1d3a")
+		)
+		(pin "G"
+			(uuid "c0fbbcd1-aa5f-45f8-b37f-d0b5d677cfbb")
+		)
+		(pin "R"
+			(uuid "ede87a35-53fa-46b8-b5d5-5fe6486e08da")
+		)
+		(pin "T"
+			(uuid "209d04a7-2932-48ed-bae1-71c8127e1187")
+		)
+		(instances
+			(project ""
+				(path "/387b6079-e547-4b62-84b5-51a54c04db0a"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDA")
+		(at 147.32 139.7 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "84094831-4241-49cc-b3a4-9d402e296dbc")
+		(property "Reference" "#PWR018"
+			(at 147.32 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GNDA"
+			(at 147.32 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 147.32 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 147.32 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
+			(at 147.32 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "77a959f2-c46c-4022-b1e6-2abcfd376e50")
+		)
+		(instances
+			(project ""
+				(path "/387b6079-e547-4b62-84b5-51a54c04db0a"
+					(reference "#PWR018")
+					(unit 1)
+				)
+			)
+		)
+	)
 	(sheet
-		(at 97.79 83.82)
-		(size 22.86 11.43)
+		(at 115.57 114.3)
+		(size 17.78 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "6d234bbe-76d5-4bb0-ba16-fed298a9d9f4")
+		(property "Sheetname" "Amplifier_L"
+			(at 115.57 113.5884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "amplifier.kicad_sch"
+			(at 115.57 127.5846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "DAC" input
+			(at 115.57 123.19 180)
+			(uuid "eceb2873-d6d7-40f2-aab5-c219b86c7111")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "DACb" input
+			(at 115.57 125.73 180)
+			(uuid "177e87a2-cae5-43f8-ad00-d78ada6bcb48")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "OUT" output
+			(at 133.35 120.65 0)
+			(uuid "7e716d10-0edf-41a6-b649-4727de375b91")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "V_neg" input
+			(at 115.57 118.11 180)
+			(uuid "598aff77-5174-460e-ab6e-5c2e023080b5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "V_pos" input
+			(at 115.57 115.57 180)
+			(uuid "449e2e3d-8856-49a8-bd67-077301592fac")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "dac_board"
+				(path "/387b6079-e547-4b62-84b5-51a54c04db0a"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 78.74 113.03)
+		(size 15.24 7.62)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -21,8 +710,8 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "84bc8a83-6069-4115-bf8b-d3a0edc62c27")
-		(property "Sheetname" "amplifier_power"
-			(at 97.79 83.1084 0)
+		(property "Sheetname" "Amplifier Power"
+			(at 78.74 112.3184 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31,7 +720,7 @@
 			)
 		)
 		(property "Sheetfile" "amplifier_power.kicad_sch"
-			(at 97.79 95.8346 0)
+			(at 78.74 121.2346 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -40,7 +729,7 @@
 			)
 		)
 		(pin "V_neg" output
-			(at 120.65 88.9 0)
+			(at 93.98 118.11 0)
 			(uuid "beba4e80-3821-4c95-81f8-5517002c2023")
 			(effects
 				(font
@@ -50,8 +739,100 @@
 			)
 		)
 		(pin "V_pos" output
-			(at 97.79 88.9 180)
+			(at 93.98 115.57 0)
 			(uuid "3f067b7b-c990-4aa9-a147-4b03e18c3189")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "dac_board"
+				(path "/387b6079-e547-4b62-84b5-51a54c04db0a"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 115.57 138.43)
+		(size 17.78 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "a874625f-e1b7-4234-b951-45cc10abb286")
+		(property "Sheetname" "Amplifier_R"
+			(at 115.57 137.7184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "amplifier.kicad_sch"
+			(at 115.57 151.7146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "DAC" input
+			(at 115.57 147.32 180)
+			(uuid "b184ecea-d714-4fbd-9742-87c07d2f3661")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "DACb" input
+			(at 115.57 149.86 180)
+			(uuid "ae67d903-fd1b-44fb-919e-56f94a52fd1e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "OUT" output
+			(at 133.35 144.78 0)
+			(uuid "13111bbb-8ce7-4c68-ae3a-fc6cce27bbbd")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "V_neg" input
+			(at 115.57 142.24 180)
+			(uuid "80c4e945-4938-4913-abf7-1c6048e5f016")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "V_pos" input
+			(at 115.57 139.7 180)
+			(uuid "33cb1147-5cf5-4c37-a8df-3b7b771e4bf8")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -62,7 +843,7 @@
 		(instances
 			(project "dac_board"
 				(path "/387b6079-e547-4b62-84b5-51a54c04db0a"
-					(page "2")
+					(page "4")
 				)
 			)
 		)

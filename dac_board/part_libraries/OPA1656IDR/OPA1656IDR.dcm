@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP OPA1656IDR
+D SoundPlus ultra-low noise and distortion, audio operational amplifier
+K
+F http://www.ti.com/lit/gpn/OPA1656
+$ENDCMP
+#
+#End Doc Library

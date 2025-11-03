@@ -2,4 +2,6 @@
   (version 7)
   (lib (name "2025-10-29_05-54-35")(type "KiCad")(uri "${KIPRJMOD}/part_libraries/ul_ADP5071AREZ/KiCADv6/2025-10-29_05-54-35.kicad_sym")(options "")(descr ""))
   (lib (name "LPD5030-223MRC")(type "KiCad")(uri "${KIPRJMOD}/part_libraries/LPD5030/LPD5030-223MRC.kicad_sym")(options "")(descr ""))
+  (lib (name "OPA1612AIDRGT")(type "KiCad")(uri "${KIPRJMOD}/part_libraries/OPA1612AIDRGT/OPA1612AIDRGT.kicad_sym")(options "")(descr ""))
+  (lib (name "OPA1656IDR")(type "KiCad")(uri "${KIPRJMOD}/part_libraries/OPA1656IDR/OPA1656IDR.kicad_sym")(options "")(descr ""))
 )
