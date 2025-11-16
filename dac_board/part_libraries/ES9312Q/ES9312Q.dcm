@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ES9312Q
+D Linear Voltage Regulators SABRE Dual Channel Ultra Low Noise Linear Regulator, 3mmx3mm, 16-QFN
+K
+F https://www.esstech.com/wp-content/uploads/2024/03/ES9312_DataSheet_v0.2.1.pdf
+$ENDCMP
+#
+#End Doc Library

@@ -4,4 +4,6 @@
   (lib (name "LPD5030")(type "KiCad")(uri "${KIPRJMOD}/part_libraries/LPD5030")(options "")(descr ""))
   (lib (name "OPA1612AIDRGT")(type "KiCad")(uri "${KIPRJMOD}/part_libraries/OPA1612AIDRGT")(options "")(descr ""))
   (lib (name "OPA1656IDR")(type "KiCad")(uri "${KIPRJMOD}/part_libraries/OPA1656IDR")(options "")(descr ""))
+  (lib (name "ES9039Q2M")(type "KiCad")(uri "${KIPRJMOD}/part_libraries/ES9039Q2M")(options "")(descr ""))
+  (lib (name "ES9312Q")(type "KiCad")(uri "${KIPRJMOD}/part_libraries/ES9312Q")(options "")(descr ""))
 )

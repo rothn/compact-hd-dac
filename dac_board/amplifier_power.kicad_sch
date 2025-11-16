@@ -1498,142 +1498,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+VDC"
-			(power)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "+VDC"
-				(at 0 6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+VDC\""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "+VDC_0_1"
-				(polyline
-					(pts
-						(xy -1.143 3.175) (xy 1.143 3.175)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 3.175)
-					(radius 1.905)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.032) (xy 0 4.318)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+VDC_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:GNDA"
 			(power)
 			(pin_numbers
@@ -2050,6 +1914,16 @@
 			(type default)
 		)
 		(uuid "06601e4e-fc2e-48ae-90ef-773ae6ce33ec")
+	)
+	(wire
+		(pts
+			(xy 123.19 99.06) (xy 124.46 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "076c7690-faee-4447-873d-63bf5ffaf174")
 	)
 	(wire
 		(pts
@@ -2711,6 +2585,17 @@
 		)
 		(uuid "ff395f52-2dbf-4e60-bad5-d8b52fea0869")
 	)
+	(hierarchical_label "20V"
+		(shape input)
+		(at 180.34 106.68 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5602c13f-b386-489f-9d4b-77e85db45bb2")
+	)
 	(hierarchical_label "V_pos"
 		(shape output)
 		(at 82.55 81.28 180)
@@ -2732,6 +2617,39 @@
 			(justify left)
 		)
 		(uuid "824fd4ec-ee1f-4335-b234-860bcb9bb40b")
+	)
+	(hierarchical_label "20V"
+		(shape input)
+		(at 118.11 67.31 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8c9cc9f8-3647-4606-aafc-cc3abd83bbe7")
+	)
+	(hierarchical_label "20V"
+		(shape input)
+		(at 198.12 85.09 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a8d67445-ad0f-4b39-952c-45692d2e5aa2")
+	)
+	(hierarchical_label "20V"
+		(shape input)
+		(at 123.19 99.06 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c4945af7-5268-4797-aa79-b045595ad6ea")
 	)
 	(symbol
 		(lib_id "power:GNDPWR")
@@ -3996,73 +3914,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+VDC")
-		(at 124.46 99.06 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "750eda28-6ae4-4e34-9fb3-04ae0b43c3f6")
-		(property "Reference" "#PWR03"
-			(at 127 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+VDC"
-			(at 118.11 99.0599 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 124.46 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 124.46 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+VDC\""
-			(at 124.46 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1190bc49-b61c-4866-9ba8-697580aa47df")
-		)
-		(instances
-			(project "dac_board"
-				(path "/387b6079-e547-4b62-84b5-51a54c04db0a/84bc8a83-6069-4115-bf8b-d3a0edc62c27"
-					(reference "#PWR03")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 88.9 85.09 0)
 		(unit 1)
@@ -4339,73 +4190,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+VDC")
-		(at 118.11 67.31 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9e517c82-7779-4839-836e-9d272d3312e3")
-		(property "Reference" "#PWR06"
-			(at 115.57 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+VDC"
-			(at 124.46 67.3099 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 118.11 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 118.11 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+VDC\""
-			(at 118.11 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6541f544-f725-4e06-aae5-bd59e04c82d5")
-		)
-		(instances
-			(project "dac_board"
-				(path "/387b6079-e547-4b62-84b5-51a54c04db0a/84bc8a83-6069-4115-bf8b-d3a0edc62c27"
-					(reference "#PWR06")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Small")
 		(at 184.15 91.44 90)
 		(unit 1)
@@ -4534,72 +4318,6 @@
 			(project "dac_board"
 				(path "/387b6079-e547-4b62-84b5-51a54c04db0a/84bc8a83-6069-4115-bf8b-d3a0edc62c27"
 					(reference "#PWR05")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+VDC")
-		(at 180.34 106.68 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b8055d5c-6ab7-486d-942d-f47feff375ea")
-		(property "Reference" "#PWR014"
-			(at 180.34 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+VDC"
-			(at 180.34 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 180.34 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 180.34 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+VDC\""
-			(at 180.34 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8212ef0d-e43a-4a61-98ce-d94e7b8c8a14")
-		)
-		(instances
-			(project "dac_board"
-				(path "/387b6079-e547-4b62-84b5-51a54c04db0a/84bc8a83-6069-4115-bf8b-d3a0edc62c27"
-					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -4866,73 +4584,6 @@
 			(project "dac_board"
 				(path "/387b6079-e547-4b62-84b5-51a54c04db0a/84bc8a83-6069-4115-bf8b-d3a0edc62c27"
 					(reference "#PWR015")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+VDC")
-		(at 198.12 85.09 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cd325866-f2a5-4dd9-872e-07ea4768ba63")
-		(property "Reference" "#PWR02"
-			(at 195.58 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+VDC"
-			(at 204.47 85.0899 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 198.12 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 198.12 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+VDC\""
-			(at 198.12 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d6974feb-8383-41ad-9437-e671c1b62c17")
-		)
-		(instances
-			(project "dac_board"
-				(path "/387b6079-e547-4b62-84b5-51a54c04db0a/84bc8a83-6069-4115-bf8b-d3a0edc62c27"
-					(reference "#PWR02")
 					(unit 1)
 				)
 			)

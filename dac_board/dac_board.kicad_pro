@@ -625,6 +625,10 @@
     [
       "a874625f-e1b7-4234-b951-45cc10abb286",
       "Amplifier_R"
+    ],
+    [
+      "6ab2fcd6-dc45-4780-a3f0-603f19017a4d",
+      "DAC"
     ]
   ],
   "text_variables": {}
