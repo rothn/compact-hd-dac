@@ -4,6 +4,9 @@
 	(generator_version "9.0")
 	(uuid "f7d655d1-c0f9-4e77-94a8-e7c27fd477c9")
 	(paper "A4")
+	(title_block
+		(title "Amplifier Power Supply")
+	)
 	(lib_symbols
 		(symbol "2025-10-29_05-54-35:ADP5071AREZ"
 			(pin_names

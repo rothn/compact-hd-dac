@@ -4,6 +4,9 @@
 	(generator_version "9.0")
 	(uuid "90a5b6fd-323c-40d2-9fb0-3f6af2e7ace2")
 	(paper "A4")
+	(title_block
+		(title "Amplifier")
+	)
 	(lib_symbols
 		(symbol "Device:C_Small"
 			(pin_numbers
