@@ -6,4 +6,8 @@
   (lib (name "OPA1656IDR")(type "KiCad")(uri "${KIPRJMOD}/part_libraries/OPA1656IDR/OPA1656IDR.kicad_sym")(options "")(descr ""))
   (lib (name "ES9039Q2M")(type "KiCad")(uri "${KIPRJMOD}/part_libraries/ES9039Q2M/ES9039Q2M.kicad_sym")(options "")(descr ""))
   (lib (name "ES9312Q")(type "KiCad")(uri "${KIPRJMOD}/part_libraries/ES9312Q/ES9312Q.kicad_sym")(options "")(descr ""))
+  (lib (name "ASTX-H12-49_152MHZ-T")(type "KiCad")(uri "${KIPRJMOD}/part_libraries/ASTX-H12-49.152MHZ-T/ASTX-H12-49_152MHZ-T.kicad_sym")(options "")(descr ""))
+  (lib (name "ProLib_pcs_2025-11-22")(type "EasyEDA (JLCEDA) Pro")(uri "${KIPRJMOD}/part_libraries/XMOS_XU316_QF60A/ProLib_pcs_2025-11-22.elibz")(options "")(descr ""))
+  (lib (name "M50-3551042")(type "KiCad")(uri "${KIPRJMOD}/part_libraries/M50-3551042/M50-3551042.kicad_sym")(options "")(descr ""))
+  (lib (name "FA-238_24_0000MB-W0")(type "KiCad")(uri "${KIPRJMOD}/part_libraries/FA-238_24.0000MB-W0/FA-238_24_0000MB-W0.kicad_sym")(options "")(descr ""))
 )

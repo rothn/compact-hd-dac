@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ASTX-H12-49.152MHZ-T
+D TCXO Oscillators
+K
+F https://abracon.com/Oscillators/ASTX-H12.pdf
+$ENDCMP
+#
+#End Doc Library
