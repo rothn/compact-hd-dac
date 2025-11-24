@@ -308,19 +308,20 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "LTSpice: 2W\n in @ 1kHz\n output 2V p-p"
+	(text "Amplifier LTSpice:\n2W for 4V p-p\n4W for 10V p-p\n @ 1kHz"
 		(exclude_from_sim no)
-		(at 210.312 82.55 0)
+		(at 197.104 64.77 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
+			(justify left)
 		)
 		(uuid "07d80f76-e9e2-4b55-b4d3-0fbde8d909fb")
 	)
-	(text "LTSpice: average 5W in under\nsimulated constant 4W load"
+	(text "Amplifier Power LTSpice:\naverage 5W in under simulated constant 4W load\naverage 8.5W in under simulated constant 8W load"
 		(exclude_from_sim no)
-		(at 170.688 66.802 0)
+		(at 170.18 62.738 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -347,16 +348,6 @@
 			)
 		)
 		(uuid "e8198e79-5c50-470c-994e-62567ec4c16a")
-	)
-	(text "LTSpice: 2W\n in @ 1kHz\n output 2V p-p"
-		(exclude_from_sim no)
-		(at 210.312 106.172 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "ea63d562-64f9-45f9-ab72-42305e6c7b2b")
 	)
 	(junction
 		(at 191.77 73.66)
