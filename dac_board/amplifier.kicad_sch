@@ -1094,6 +1094,15 @@
 		(color 0 0 0 0)
 		(uuid "f686150a-8895-4416-854b-6faebbe34ca9")
 	)
+	(bus_entry
+		(at 158.75 83.82)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "679cf12d-3d2c-4a9d-8476-6e96f61029f6")
+	)
 	(wire
 		(pts
 			(xy 48.26 68.58) (xy 54.61 68.58)

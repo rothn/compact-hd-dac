@@ -10,4 +10,5 @@
   (lib (name "XMOS_XU316_QF60A")(type "KiCad")(uri "${KIPRJMOD}/part_libraries/XMOS_XU316_QF60A")(options "")(descr ""))
   (lib (name "M50-3551042")(type "KiCad")(uri "${KIPRJMOD}/part_libraries/M50-3551042")(options "")(descr ""))
   (lib (name "FA-238_24.0000MB-W0")(type "KiCad")(uri "${KIPRJMOD}/part_libraries/FA-238_24.0000MB-W0")(options "")(descr ""))
+  (lib (name "ul_IS25LP080D-JULE-TR")(type "KiCad")(uri "${KIPRJMOD}/part_libraries/ul_IS25LP080D-JULE-TR/footprints.pretty")(options "")(descr ""))
 )

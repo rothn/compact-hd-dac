@@ -308,7 +308,17 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "Will need <2W per sim. Let's say 4W conservatively"
+	(text "LTSpice: 2W\n in @ 1kHz\n output 2V p-p"
+		(exclude_from_sim no)
+		(at 210.312 82.55 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "07d80f76-e9e2-4b55-b4d3-0fbde8d909fb")
+	)
+	(text "LTSpice: average 5W in under\nsimulated constant 4W load"
 		(exclude_from_sim no)
 		(at 170.688 66.802 0)
 		(effects
@@ -327,6 +337,26 @@
 			)
 		)
 		(uuid "76a958f6-7971-4d97-aa2d-72e619e3b4f8")
+	)
+	(text "Device Source Capabilities:\n\nSmartphones: 5V @ 0.9A (4.5W)\nFramework Laptop: 5V @ 1.5A (15W)\n\nWe probably need some logic to current-limit the amplifier supply according to input capabilities."
+		(exclude_from_sim no)
+		(at 111.506 50.292 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "e8198e79-5c50-470c-994e-62567ec4c16a")
+	)
+	(text "LTSpice: 2W\n in @ 1kHz\n output 2V p-p"
+		(exclude_from_sim no)
+		(at 210.312 106.172 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "ea63d562-64f9-45f9-ab72-42305e6c7b2b")
 	)
 	(junction
 		(at 191.77 73.66)
@@ -489,6 +519,16 @@
 			(type default)
 		)
 		(uuid "616027f0-b934-466d-ac0d-581a243f8d67")
+	)
+	(wire
+		(pts
+			(xy 234.95 83.82) (xy 234.95 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67b6ef60-2122-43f6-8be2-55adb38ef6c9")
 	)
 	(wire
 		(pts
@@ -721,6 +761,72 @@
 			(project ""
 				(path "/387b6079-e547-4b62-84b5-51a54c04db0a"
 					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDA")
+		(at 234.95 83.82 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "785b63b1-08f2-4527-aa34-8d18a4750779")
+		(property "Reference" "#PWR057"
+			(at 234.95 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GNDA"
+			(at 234.95 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 234.95 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 234.95 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
+			(at 234.95 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7fa82617-5e06-44b7-a0c7-99248261a856")
+		)
+		(instances
+			(project ""
+				(path "/387b6079-e547-4b62-84b5-51a54c04db0a"
+					(reference "#PWR057")
 					(unit 1)
 				)
 			)
