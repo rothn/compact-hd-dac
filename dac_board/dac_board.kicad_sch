@@ -308,9 +308,9 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "Amplifier LTSpice:\n2W for 4V p-p\n4W for 10V p-p\n @ 1kHz"
+	(text "Amplifier LTSpice:\n2W for 4V p-p\n4W for 10V p-p\nMore than that would require additional last-stage opamp circuits\n @ 1kHz"
 		(exclude_from_sim no)
-		(at 197.104 64.77 0)
+		(at 197.866 64.262 0)
 		(effects
 			(font
 				(size 1.27 1.27)
