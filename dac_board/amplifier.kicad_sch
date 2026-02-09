@@ -932,6 +932,16 @@
 		)
 		(uuid "6f7ef942-674f-466b-a41d-4fc074cda56f")
 	)
+	(text "TODO: Routing annotations"
+		(exclude_from_sim no)
+		(at 33.528 19.05 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "fedf8544-7884-4f64-8006-372146365e84")
+	)
 	(junction
 		(at 91.44 153.67)
 		(diameter 0)

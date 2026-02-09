@@ -8,194 +8,6 @@
 		(title "DAC and DAC Power")
 	)
 	(lib_symbols
-		(symbol "ASTX-H12-49_152MHZ-T:ASTX-H12-49.152MHZ-T"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "Y"
-				(at 36.83 7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Value" "ASTX-H12-49.152MHZ-T"
-				(at 36.83 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Footprint" "ASTX-H12"
-				(at 36.83 -94.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://abracon.com/Oscillators/ASTX-H12.pdf"
-				(at 36.83 -194.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Description" "TCXO Oscillators"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Height" "0.95"
-				(at 36.83 -394.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Mouser Part Number" "815-ASTX-H12-49.15-T"
-				(at 36.83 -494.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/ABRACON/ASTX-H12-49.152MHZ-T?qs=W0yvOO0ixfH35g3lROWmQA%3D%3D"
-				(at 36.83 -594.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer_Name" "ABRACON"
-				(at 36.83 -694.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer_Part_Number" "ASTX-H12-49.152MHZ-T"
-				(at 36.83 -794.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(symbol "ASTX-H12-49.152MHZ-T_1_1"
-				(rectangle
-					(start 5.08 2.54)
-					(end 35.56 -5.08)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin passive line
-					(at 0 0 0)
-					(length 5.08)
-					(name "VDD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 0)
-					(length 5.08)
-					(name "TRI-STATE"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 40.64 0 180)
-					(length 5.08)
-					(name "OUTPUT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 40.64 -2.54 180)
-					(length 5.08)
-					(name "GND/CASE"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:C_Small"
 			(pin_numbers
 				(hide yes)
@@ -1846,7 +1658,7 @@
 		)
 		(uuid "59743d37-a040-4762-b268-8e977dfcfc83")
 	)
-	(text "ENABLE_64FS_MODE = 1 \r\nDAC_MODE = 1 \r\nPCM_MASTER_MODE=1 \r\nMASTER_BCK_DIV=0   # Use with 49.152 MHz clock to have 768 kHz i2s w/ 32-bit channels (64FS)\r\nSYNC_MODE = ? # Device should pull data only if needed by default; set SYNC_MODE to SYNC if having trouble"
+	(text "ENABLE_64FS_MODE = 1\r\nDAC_MODE = 1\r\nSYNC_MODE = 1 # Device should pull data exactly on MCLK boundary; set SYNC_MODE to 0/ASYNC if having trouble (but this will only work for 384kHz and below)\n\nIf audio jitters, consider hooking up a MUX and using a 100MHz clock w/ ASYNC\nmode for 384 kHz and below."
 		(exclude_from_sim no)
 		(at 20.32 182.118 0)
 		(effects
@@ -1856,12 +1668,6 @@
 			(justify left top)
 		)
 		(uuid "b2d83edc-a033-443c-9859-4b630fe7dcda")
-	)
-	(junction
-		(at 69.85 33.02)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "264fb75b-5f1e-43a2-968e-a04b0e04de32")
 	)
 	(junction
 		(at 160.02 91.44)
@@ -1874,12 +1680,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4cdf1a67-42ee-46b0-9d27-1bf42a3a7d6d")
-	)
-	(junction
-		(at 26.67 30.48)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "76a4d1d0-290a-4445-8f9f-541b9121f824")
 	)
 	(junction
 		(at 185.42 138.43)
@@ -1910,16 +1710,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fc244297-85cb-45ec-a266-1cb4601597bc")
-	)
-	(wire
-		(pts
-			(xy 27.94 33.02) (xy 26.67 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "039bbfff-4c54-4abc-910c-101de2b6cae8")
 	)
 	(wire
 		(pts
@@ -1973,16 +1763,6 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 20.32) (xy 69.85 20.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "14de67df-7c18-4b1f-96fa-23e36f752c20")
-	)
-	(wire
-		(pts
 			(xy 151.13 105.41) (xy 151.13 107.95)
 		)
 		(stroke
@@ -2030,26 +1810,6 @@
 			(type default)
 		)
 		(uuid "2440074d-bc07-4ea5-a744-f4ad05292bed")
-	)
-	(wire
-		(pts
-			(xy 69.85 20.32) (xy 69.85 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "27c5f4bb-f8d6-402f-955d-f1b4f63ca11a")
-	)
-	(wire
-		(pts
-			(xy 69.85 33.02) (xy 71.12 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "28a7c4b0-4427-4f60-8910-a0731d73623c")
 	)
 	(wire
 		(pts
@@ -2140,16 +1900,6 @@
 			(type default)
 		)
 		(uuid "3eadd63a-271c-45e6-8a34-f15c0f5b1c49")
-	)
-	(wire
-		(pts
-			(xy 68.58 30.48) (xy 81.28 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3ee058e2-2dad-47cc-86b0-a6e80e7fd1ab")
 	)
 	(wire
 		(pts
@@ -2253,16 +2003,6 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 30.48) (xy 27.94 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "52cbcd0b-2ee4-4586-879f-a1e681bb8b25")
-	)
-	(wire
-		(pts
 			(xy 204.47 77.47) (xy 204.47 81.28)
 		)
 		(stroke
@@ -2320,16 +2060,6 @@
 			(type default)
 		)
 		(uuid "6329e673-642e-4a89-887b-0faa57316625")
-	)
-	(wire
-		(pts
-			(xy 81.28 30.48) (xy 81.28 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "68805c66-dc0e-43ed-b5c2-6245ed89d78a")
 	)
 	(wire
 		(pts
@@ -2403,6 +2133,16 @@
 	)
 	(wire
 		(pts
+			(xy 52.07 69.85) (xy 52.07 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "81fc1051-246f-4c0d-bce9-73e457002282")
+	)
+	(wire
+		(pts
 			(xy 102.87 105.41) (xy 102.87 109.22)
 		)
 		(stroke
@@ -2423,16 +2163,6 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 20.32) (xy 26.67 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "881a18b4-5ea9-4571-a4ee-38b7fd7e7539")
-	)
-	(wire
-		(pts
 			(xy 165.1 102.87) (xy 160.02 102.87)
 		)
 		(stroke
@@ -2440,16 +2170,6 @@
 			(type default)
 		)
 		(uuid "8c0e2d21-e9d9-4232-9a7f-463d7ff16173")
-	)
-	(wire
-		(pts
-			(xy 39.37 20.32) (xy 26.67 20.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "91f3b4a9-bdef-4817-be6b-90c50bc90130")
 	)
 	(wire
 		(pts
@@ -2503,16 +2223,6 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 43.18) (xy 52.07 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a9307155-852f-4861-b2ec-bf8e1714ba80")
-	)
-	(wire
-		(pts
 			(xy 102.87 105.41) (xy 105.41 105.41)
 		)
 		(stroke
@@ -2540,16 +2250,6 @@
 			(type default)
 		)
 		(uuid "abc25221-9608-435f-9e3c-f07d73264752")
-	)
-	(wire
-		(pts
-			(xy 26.67 33.02) (xy 26.67 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "abf0c6a0-f5e7-4e58-915d-79268aaf2cde")
 	)
 	(wire
 		(pts
@@ -2590,26 +2290,6 @@
 			(type default)
 		)
 		(uuid "b3cc727f-bbe5-4846-b737-5ac1a6f4ad91")
-	)
-	(wire
-		(pts
-			(xy 25.4 30.48) (xy 26.67 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b597cb9e-de0d-4682-a529-935300ccd5af")
-	)
-	(wire
-		(pts
-			(xy 52.07 43.18) (xy 52.07 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b6386c7c-67ac-4e76-9928-9c4e303f8ec2")
 	)
 	(wire
 		(pts
@@ -2833,16 +2513,6 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 33.02) (xy 69.85 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f905328e-23aa-4e01-95c4-a97db43a78c3")
-	)
-	(wire
-		(pts
 			(xy 151.13 91.44) (xy 152.4 91.44)
 		)
 		(stroke
@@ -2873,6 +2543,17 @@
 		)
 		(uuid "2653f108-4fa3-4d31-894e-71844a505a67")
 	)
+	(hierarchical_label "I2S_MCLK"
+		(shape input)
+		(at 52.07 69.85 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "370531bc-49e4-4262-8e79-b5ac3e9e19ea")
+	)
 	(hierarchical_label "DAC1b"
 		(shape output)
 		(at 29.21 92.71 180)
@@ -2894,17 +2575,6 @@
 			(justify right)
 		)
 		(uuid "4a436705-5057-4e2f-949a-b68daac5485a")
-	)
-	(hierarchical_label "POWER3V3"
-		(shape input)
-		(at 25.4 30.48 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "599291d0-6cd8-443f-9590-627c954c3911")
 	)
 	(hierarchical_label "APOWER_5V"
 		(shape input)
@@ -3545,73 +3215,6 @@
 			(project "dac_board"
 				(path "/387b6079-e547-4b62-84b5-51a54c04db0a/6ab2fcd6-dc45-4780-a3f0-603f19017a4d"
 					(reference "#PWR036")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GNDD")
-		(at 71.12 33.02 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "29d38b89-ad9c-49d0-b800-d038c1e93c44")
-		(property "Reference" "#PWR048"
-			(at 77.47 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GNDD"
-			(at 74.93 33.0199 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 71.12 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 71.12 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GNDD\" , digital ground"
-			(at 71.12 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "45ac58b0-2a52-41a8-95b2-5d0fa25e73aa")
-		)
-		(instances
-			(project "dac_board"
-				(path "/387b6079-e547-4b62-84b5-51a54c04db0a/6ab2fcd6-dc45-4780-a3f0-603f19017a4d"
-					(reference "#PWR048")
 					(unit 1)
 				)
 			)
@@ -4994,132 +4597,6 @@
 		)
 	)
 	(symbol
-		(lib_id "ASTX-H12-49_152MHZ-T:ASTX-H12-49.152MHZ-T")
-		(at 27.94 30.48 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c28a2252-de8c-4ce1-9270-c52d408570e1")
-		(property "Reference" "Y1"
-			(at 48.26 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "ASTX-H12-49.152MHZ-T"
-			(at 48.26 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "ASTX-H12"
-			(at 64.77 125.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://abracon.com/Oscillators/ASTX-H12.pdf"
-			(at 64.77 225.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "TCXO Oscillators"
-			(at 27.94 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "0.95"
-			(at 64.77 425.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "815-ASTX-H12-49.15-T"
-			(at 64.77 525.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/ABRACON/ASTX-H12-49.152MHZ-T?qs=W0yvOO0ixfH35g3lROWmQA%3D%3D"
-			(at 64.77 625.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "ABRACON"
-			(at 64.77 725.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "ASTX-H12-49.152MHZ-T"
-			(at 64.77 825.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "b3e855ce-ea2a-4f41-af35-cc199a68f5b7")
-		)
-		(pin "3"
-			(uuid "0c1fb207-842b-4222-bd1e-762646c001d1")
-		)
-		(pin "1"
-			(uuid "23f6aec4-87b2-40d5-b4a0-97837a887280")
-		)
-		(pin "4"
-			(uuid "d07c013c-0ac7-41c7-bfeb-ca41c73145fd")
-		)
-		(instances
-			(project ""
-				(path "/387b6079-e547-4b62-84b5-51a54c04db0a/6ab2fcd6-dc45-4780-a3f0-603f19017a4d"
-					(reference "Y1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GNDA")
 		(at 29.21 100.33 270)
 		(unit 1)
@@ -5181,74 +4658,6 @@
 			(project "dac_board"
 				(path "/387b6079-e547-4b62-84b5-51a54c04db0a/6ab2fcd6-dc45-4780-a3f0-603f19017a4d"
 					(reference "#PWR032")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 41.91 20.32 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "daa9c608-2fe7-4f72-9d87-91044997f034")
-		(property "Reference" "C28"
-			(at 41.9163 13.97 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0.01u"
-			(at 41.9163 16.51 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 41.91 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 41.91 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 41.91 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "6617fb5b-80b1-4826-9910-e446be69ded4")
-		)
-		(pin "1"
-			(uuid "5095e41a-f019-4c00-8855-5c8b961f482f")
-		)
-		(instances
-			(project ""
-				(path "/387b6079-e547-4b62-84b5-51a54c04db0a/6ab2fcd6-dc45-4780-a3f0-603f19017a4d"
-					(reference "C28")
 					(unit 1)
 				)
 			)

@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ASELJ-E-45.1584MHz-L-R-T
+D 45.1584 MHz XO (Standard) CMOS Oscillator 3.3V Enable/Disable 4-SMD, No Lead -40C ~ 85C
+K
+F https://abracon.com/datasheets/ASELJ.pdf
+$ENDCMP
+#
+#End Doc Library

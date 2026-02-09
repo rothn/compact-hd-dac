@@ -1776,6 +1776,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "TODO: Routing annotations"
+		(exclude_from_sim no)
+		(at 87.63 26.416 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "40d24572-4dfd-4ba4-ac79-6e2ba4961558")
+	)
 	(text "~-17.5V"
 		(exclude_from_sim no)
 		(at 246.38 78.994 0)

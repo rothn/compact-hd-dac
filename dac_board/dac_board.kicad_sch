@@ -329,7 +329,7 @@
 		)
 		(uuid "11280459-8a55-4293-8f57-83db2c96c64a")
 	)
-	(text "Separate ground plane between channels"
+	(text "Separate ground and power planes between channels\n(just a thin bridge to equalize)"
 		(exclude_from_sim no)
 		(at 204.47 91.44 0)
 		(effects
@@ -338,6 +338,16 @@
 			)
 		)
 		(uuid "76a958f6-7971-4d97-aa2d-72e619e3b4f8")
+	)
+	(text "Differential pairs (xa, xb)\nmust be routed together\nfor signal integrity.\n\nChannels should be routed along\nsimilar paths to prevent audible\nphase or volume differences."
+		(exclude_from_sim no)
+		(at 156.972 106.426 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "c8e299b6-db25-47ec-bb70-048e82844817")
 	)
 	(text "Device Source Capabilities:\n\nSmartphones: 5V @ 0.9A (4.5W)\nFramework Laptop: 5V @ 1.5A (15W)\n\nWe probably need some logic to current-limit the amplifier supply according to input capabilities."
 		(exclude_from_sim no)
@@ -348,6 +358,16 @@
 			)
 		)
 		(uuid "e8198e79-5c50-470c-994e-62567ec4c16a")
+	)
+	(text "i2s pins must be routed\ntogether and either shorter\nthan 1.2in or impedance-matched.\n\nConsider impedance-matching\nanyway (even if close) just to\nensure a good result."
+		(exclude_from_sim no)
+		(at 110.49 114.3 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "f5d4cc49-7f10-4f6e-b46b-e228f2bf308b")
 	)
 	(junction
 		(at 191.77 73.66)
@@ -530,6 +550,16 @@
 			(type default)
 		)
 		(uuid "6a1c9d8c-e31c-46f0-8892-d587718479b8")
+	)
+	(wire
+		(pts
+			(xy 92.71 102.87) (xy 102.87 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ba4ff5c-b050-40ff-9c53-964f5db296c1")
 	)
 	(wire
 		(pts
@@ -1023,6 +1053,16 @@
 				(justify right)
 			)
 		)
+		(pin "I2S_MCLK" output
+			(at 92.71 102.87 0)
+			(uuid "80221d4e-1d64-4cbd-92a0-717104f9b3b6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 		(instances
 			(project "dac_board"
 				(path "/387b6079-e547-4b62-84b5-51a54c04db0a"
@@ -1033,7 +1073,7 @@
 	)
 	(sheet
 		(at 102.87 85.09)
-		(size 38.1 16.51)
+		(size 38.1 19.05)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1057,7 +1097,7 @@
 			)
 		)
 		(property "Sheetfile" "dac.kicad_sch"
-			(at 102.87 102.1846 0)
+			(at 102.87 104.7246 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1173,6 +1213,16 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+		(pin "I2S_MCLK" input
+			(at 102.87 102.87 180)
+			(uuid "338ec04e-d19f-44d8-91cf-6bc798f808f1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
