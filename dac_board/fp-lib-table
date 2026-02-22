@@ -13,4 +13,7 @@
   (lib (name "SN74LVC1G3157DCKR")(type "KiCad")(uri "${KIPRJMOD}/part_libraries/SN74LVC1G3157DCKR/footprints.pretty")(options "")(descr ""))
   (lib (name "ASELJE451584MHzLRT")(type "KiCad")(uri "${KIPRJMOD}/part_libraries/ASELJE451584MHzLRT")(options "")(descr ""))
   (lib (name "AT25SF321B-SSHB-B")(type "KiCad")(uri "${KIPRJMOD}/part_libraries/AT25SF321B-SSHB-B")(options "")(descr ""))
+  (lib (name "Molex_1054440011")(type "KiCad")(uri "${KIPRJMOD}/part_libraries/Molex_1054440011")(options "")(descr ""))
+  (lib (name "AP33772SDKZ-13-FA01")(type "KiCad")(uri "${KIPRJMOD}/part_libraries/AP33772SDKZ-13-FA01")(options "")(descr ""))
+  (lib (name "SISF00DN-T1-GE3")(type "KiCad")(uri "${KIPRJMOD}/part_libraries/SISF00DN-T1-GE3")(options "")(descr ""))
 )

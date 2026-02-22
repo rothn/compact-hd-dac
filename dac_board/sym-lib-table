@@ -13,4 +13,7 @@
   (lib (name "2026-02-08_21-52-17")(type "KiCad")(uri "${KIPRJMOD}/part_libraries/SN74LVC1G3157DCKR/2026-02-08_21-52-17.kicad_sym")(options "")(descr ""))
   (lib (name "ASELJ-E-45_1584MHz-L-R-T")(type "KiCad")(uri "${KIPRJMOD}/part_libraries/ASELJE451584MHzLRT/ASELJ-E-45_1584MHz-L-R-T.kicad_sym")(options "")(descr ""))
   (lib (name "AT25SF321B-SSHB-B")(type "KiCad")(uri "${KIPRJMOD}/part_libraries/AT25SF321B-SSHB-B/AT25SF321B-SSHB-B.kicad_sym")(options "")(descr ""))
+  (lib (name "1054440011")(type "KiCad")(uri "${KIPRJMOD}/part_libraries/Molex_1054440011/1054440011.kicad_sym")(options "")(descr ""))
+  (lib (name "AP33772SDKZ-13-FA01")(type "KiCad")(uri "${KIPRJMOD}/part_libraries/AP33772SDKZ-13-FA01/AP33772SDKZ-13-FA01.kicad_sym")(options "")(descr ""))
+  (lib (name "2026-02-22_02-55-49")(type "KiCad")(uri "${KIPRJMOD}/part_libraries/SISF00DN-T1-GE3/2026-02-22_02-55-49.kicad_sym")(options "")(descr ""))
 )

@@ -633,6 +633,10 @@
     [
       "06a405d1-37d8-4a4b-829e-55a7ee3089bf",
       "MCU"
+    ],
+    [
+      "bce76325-a8d2-4e9b-8673-707bc6babdc7",
+      "USB"
     ]
   ],
   "text_variables": {}
