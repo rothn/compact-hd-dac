@@ -3414,6 +3414,16 @@
 		)
 		(uuid "37328d4c-014e-408c-bdc7-f5ebf95f3565")
 	)
+	(text "Comes in with 4.37-5.33V,\nbut this interface is only\ndesigned to take 1.8V (2.1V max)"
+		(exclude_from_sim no)
+		(at 56.896 27.94 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "68c735e2-94e7-4886-87e8-77d32e17054e")
+	)
 	(text "Boot from QSPI"
 		(exclude_from_sim no)
 		(at 258.318 70.612 0)
@@ -3471,6 +3481,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "180eb553-7084-4e35-9872-335386b7ddad")
+	)
+	(junction
+		(at 73.66 30.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1814e65f-5de0-43cf-86d7-74883305e083")
 	)
 	(junction
 		(at 44.45 130.81)
@@ -3603,6 +3619,26 @@
 			(type default)
 		)
 		(uuid "030136d4-ebf9-4d11-b784-c19b8b1c4bb7")
+	)
+	(wire
+		(pts
+			(xy 83.82 30.48) (xy 73.66 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "03989d0e-620e-4d6a-8050-51915c5287d1")
+	)
+	(wire
+		(pts
+			(xy 73.66 20.32) (xy 73.66 21.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "041bcba0-aa51-443a-857c-46134f867a3a")
 	)
 	(wire
 		(pts
@@ -3743,6 +3779,16 @@
 			(type default)
 		)
 		(uuid "1a38ddc3-b452-4237-988c-9abb3561d8e1")
+	)
+	(wire
+		(pts
+			(xy 73.66 39.37) (xy 73.66 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a5c6b8f-88bd-4cc6-806c-7f1e49ad56cf")
 	)
 	(wire
 		(pts
@@ -4006,6 +4052,16 @@
 	)
 	(wire
 		(pts
+			(xy 73.66 29.21) (xy 73.66 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4257483b-2a68-4dff-86a7-aab15c89d0e2")
+	)
+	(wire
+		(pts
 			(xy 86.36 85.09) (xy 86.36 90.17)
 		)
 		(stroke
@@ -4113,6 +4169,16 @@
 			(type default)
 		)
 		(uuid "539355d2-620e-4018-8e41-16cd5a24d4a7")
+	)
+	(wire
+		(pts
+			(xy 102.87 67.31) (xy 83.82 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "55d85e55-a32c-4377-935f-8dd4e7a890b7")
 	)
 	(wire
 		(pts
@@ -4423,6 +4489,16 @@
 			(type default)
 		)
 		(uuid "846e5c54-142b-414b-b668-3aea256885e3")
+	)
+	(wire
+		(pts
+			(xy 73.66 30.48) (xy 73.66 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "85334e72-c1a0-436d-baf4-4fbdbf4852de")
 	)
 	(wire
 		(pts
@@ -4806,6 +4882,16 @@
 	)
 	(wire
 		(pts
+			(xy 83.82 67.31) (xy 83.82 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b90a5abc-1adf-44a2-ab44-9c3a0526609c")
+	)
+	(wire
+		(pts
 			(xy 81.28 123.19) (xy 67.31 123.19)
 		)
 		(stroke
@@ -5003,6 +5089,16 @@
 			(type default)
 		)
 		(uuid "d5863538-f1fb-4b70-8cb8-2de4ee21256a")
+	)
+	(wire
+		(pts
+			(xy 72.39 20.32) (xy 73.66 20.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d58e520c-ffb6-4bbc-a7a3-c452a34cff6d")
 	)
 	(wire
 		(pts
@@ -5494,6 +5590,17 @@
 			(justify left)
 		)
 		(uuid "a3781ee6-a5ca-4b1a-b79e-8beb43666b73")
+	)
+	(hierarchical_label "USBPD_CONFIG_READY"
+		(shape input)
+		(at 72.39 20.32 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a4940337-9817-4da5-a523-0defed54303f")
 	)
 	(hierarchical_label "POWER1V8"
 		(shape input)
@@ -7077,6 +7184,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 73.66 25.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6e8aa586-bfdc-4b9b-a0d2-92b7c25d051f")
+		(property "Reference" "R50"
+			(at 76.2 24.1299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "3.3k"
+			(at 76.2 26.6699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 71.882 25.4 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 73.66 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 73.66 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "519ade8a-10d2-4ec6-8340-583799045a49")
+		)
+		(pin "2"
+			(uuid "3586747b-39e4-499a-a88c-74475fb6ced0")
+		)
+		(instances
+			(project ""
+				(path "/387b6079-e547-4b62-84b5-51a54c04db0a/06a405d1-37d8-4a4b-829e-55a7ee3089bf"
+					(reference "R50")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Switch:SW_SPDT")
 		(at 241.3 64.77 0)
 		(unit 1)
@@ -7275,6 +7452,72 @@
 			(project ""
 				(path "/387b6079-e547-4b62-84b5-51a54c04db0a/06a405d1-37d8-4a4b-829e-55a7ee3089bf"
 					(reference "#PWR049")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDD")
+		(at 73.66 40.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9a372eb0-6722-4968-8f63-72590ea93101")
+		(property "Reference" "#PWR071"
+			(at 73.66 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GNDD"
+			(at 73.66 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 73.66 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 73.66 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDD\" , digital ground"
+			(at 73.66 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "807f7898-635c-4aef-b9f2-37628b81b1f8")
+		)
+		(instances
+			(project "dac_board"
+				(path "/387b6079-e547-4b62-84b5-51a54c04db0a/06a405d1-37d8-4a4b-829e-55a7ee3089bf"
+					(reference "#PWR071")
 					(unit 1)
 				)
 			)
@@ -7728,6 +7971,76 @@
 			(project "dac_board"
 				(path "/387b6079-e547-4b62-84b5-51a54c04db0a/06a405d1-37d8-4a4b-829e-55a7ee3089bf"
 					(reference "Y1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 73.66 35.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c3139818-dbfc-4f70-b0df-19d6d0d38bd4")
+		(property "Reference" "R51"
+			(at 76.2 34.2899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1.8k"
+			(at 76.2 36.8299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 71.882 35.56 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 73.66 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 73.66 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8abd7182-056c-4f0f-b1e4-206ae6af2649")
+		)
+		(pin "2"
+			(uuid "a4d6cb0f-7653-48d3-a485-029739c88a6f")
+		)
+		(instances
+			(project "dac_board"
+				(path "/387b6079-e547-4b62-84b5-51a54c04db0a/06a405d1-37d8-4a4b-829e-55a7ee3089bf"
+					(reference "R51")
 					(unit 1)
 				)
 			)
