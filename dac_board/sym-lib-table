@@ -16,4 +16,8 @@
   (lib (name "1054440011")(type "KiCad")(uri "${KIPRJMOD}/part_libraries/Molex_1054440011/1054440011.kicad_sym")(options "")(descr ""))
   (lib (name "AP33772SDKZ-13-FA01")(type "KiCad")(uri "${KIPRJMOD}/part_libraries/AP33772SDKZ-13-FA01/AP33772SDKZ-13-FA01.kicad_sym")(options "")(descr ""))
   (lib (name "2026-02-22_02-55-49")(type "KiCad")(uri "${KIPRJMOD}/part_libraries/SISF00DN-T1-GE3/2026-02-22_02-55-49.kicad_sym")(options "")(descr ""))
+  (lib (name "MP8859GQ-0000-Z")(type "Legacy")(uri "${KIPRJMOD}/part_libraries/MP8859GQ/MP8859GQ-0000-Z.lib")(options "")(descr ""))
+  (lib (name "EMHJ350ARA101MHA0G")(type "KiCad")(uri "${KIPRJMOD}/part_libraries/CAPEMHJ350ARA101MHA0G/EMHJ350ARA101MHA0G.kicad_sym")(options "")(descr ""))
+  (lib (name "2026-02-25_19-11-46")(type "KiCad")(uri "${KIPRJMOD}/part_libraries/AP64350SP/2026-02-25_19-11-46.kicad_sym")(options "")(descr ""))
+  (lib (name "EA3036CQBR")(type "KiCad")(uri "${KIPRJMOD}/part_libraries/EA3036CQBR/EA3036CQBR.kicad_sym")(options "")(descr ""))
 )

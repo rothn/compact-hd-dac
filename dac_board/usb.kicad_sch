@@ -3384,7 +3384,7 @@
 		)
 		(uuid "fdf9eb16-71a5-4735-805d-189ac443396e")
 	)
-	(hierarchical_label "VOUT_5V"
+	(hierarchical_label "VOUT"
 		(shape output)
 		(at 118.11 55.88 90)
 		(effects

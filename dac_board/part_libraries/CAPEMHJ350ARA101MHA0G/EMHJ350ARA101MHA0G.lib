@@ -1,0 +1,28 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model EMHJ350ARA101MHA0G
+#/20080566/1811154/2.50/2/3/Capacitor
+DEF EMHJ350ARA101MHA0G C 0 30 Y Y 1 F N
+F0 "C" 350 250 50 H V L CNN
+F1 "EMHJ350ARA101MHA0G" 350 150 50 H V L CNN
+F2 "CAPAE830X1050N" 350 50 50 H I L CNN
+F3 "https://www.chemi-con.co.jp/products/relatedfiles/capacitor/catalog/MHJRA-e.PDF" 350 -50 50 H I L CNN
+F4 "Aluminum Electrolytic Capacitors - SMD" 350 -150 50 H I L CNN "Description"
+F5 "10.5" 350 -250 50 H I L CNN "Height"
+F6 "Chemi-Con" 350 -350 50 H I L CNN "Manufacturer_Name"
+F7 "EMHJ350ARA101MHA0G" 350 -450 50 H I L CNN "Manufacturer_Part_Number"
+F8 "661-EMHJ350ARA101MHA" 350 -550 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.co.uk/ProductDetail/Chemi-Con/EMHJ350ARA101MHA0G?qs=wT7LY0lnAe1cgF24H35%2FMA%3D%3D" 350 -650 50 H I L CNN "Mouser Price/Stock"
+F10 "" 350 -750 50 H I L CNN "Arrow Part Number"
+F11 "" 350 -850 50 H I L CNN "Arrow Price/Stock"
+DRAW
+X ~ 1 0 0 200 R 50 50 0 0 P
+X ~ 2 500 0 200 L 50 50 0 0 P
+P 2 0 1 6 220 100 220 -100 N
+P 2 0 1 6 280 100 280 -100 N
+P 2 0 1 6 200 0 220 0 N
+P 2 0 1 6 280 0 300 0 N
+ENDDRAW
+ENDDEF
+#
+#End Library
