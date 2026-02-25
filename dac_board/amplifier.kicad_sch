@@ -912,7 +912,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "TODO: Adjust"
+	(text "TODO: Adjust\n(How?)"
 		(exclude_from_sim no)
 		(at 120.142 107.696 0)
 		(effects
@@ -922,7 +922,7 @@
 		)
 		(uuid "155a7038-e05f-41a7-8fce-ac080dd008f4")
 	)
-	(text "TODO: Adjust"
+	(text "TODO: Adjust\n(How?)"
 		(exclude_from_sim no)
 		(at 26.162 106.68 0)
 		(effects
@@ -931,6 +931,16 @@
 			)
 		)
 		(uuid "6f7ef942-674f-466b-a41d-4fc074cda56f")
+	)
+	(text "Ref: https://www.mouser.com/datasheet/2/1082/ES9039Q2M_Datasheet_v0_1_3-3168946.pdf?srsltid=AfmBOoo8Mg7eyV0rRSOQE2bZrm686A5-zLuuUGSCcrAPs6FVjXsH2RLP\r\n\"Recommended Output Stage\"\r\np.89"
+		(exclude_from_sim no)
+		(at 131.826 28.702 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "e5109889-fce4-4ec8-b27d-50fbad29f873")
 	)
 	(text "TODO: Routing annotations"
 		(exclude_from_sim no)
