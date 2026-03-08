@@ -1,0 +1,4 @@
+dac_board/dac_board-backups/*
+*.raw
+*.log
+*.op.raw

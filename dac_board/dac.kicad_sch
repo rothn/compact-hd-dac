@@ -1648,9 +1648,9 @@
 		)
 		(uuid "55091d08-4995-4fc3-ae1f-0db9650cf2ee")
 	)
-	(text "There is no HW mode for a 768 kHz i2s master, but this can be achieved through software configuration (i2c).\nNon-Default (Sub)Register Values:"
+	(text "Non-Default (Sub)Register Values:"
 		(exclude_from_sim no)
-		(at 75.184 170.688 0)
+		(at 37.592 178.562 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1658,7 +1658,7 @@
 		)
 		(uuid "59743d37-a040-4762-b268-8e977dfcfc83")
 	)
-	(text "ENABLE_64FS_MODE = 1\r\nDAC_MODE = 1\r\nSYNC_MODE = 1 # Device should pull data exactly on MCLK boundary; set SYNC_MODE to 0/ASYNC if having trouble (but this will only work for 384kHz and below)\n\nIf audio jitters, consider hooking up a MUX and using a 100MHz clock w/ ASYNC\nmode for 384 kHz and below."
+	(text "ENABLE_64FS_MODE = 1\r\nDAC_MODE = 1\r\nSYNC_MODE = 1 # Device should pull data exactly on MCLK boundary; set SYNC_MODE to 0/ASYNC if having trouble (but this will only work for 384kHz and below)\n\nIf audio jitters, consider trying ASYNC. If needed to reach frequency, hook up a MUX to a 100MHz clock."
 		(exclude_from_sim no)
 		(at 20.32 182.118 0)
 		(effects
@@ -1668,6 +1668,12 @@
 			(justify left top)
 		)
 		(uuid "b2d83edc-a033-443c-9859-4b630fe7dcda")
+	)
+	(junction
+		(at 54.61 53.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "03cfc989-1b61-450d-abf4-32dc4ef1f7e8")
 	)
 	(junction
 		(at 160.02 91.44)
@@ -1698,6 +1704,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c1fd6bd4-e6a9-4e17-9beb-5e9e74d76395")
+	)
+	(junction
+		(at 52.07 146.05)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d1ce9e5f-3b14-488a-9f60-959ed28b7d1d")
 	)
 	(junction
 		(at 102.87 105.41)
@@ -1793,6 +1805,16 @@
 	)
 	(wire
 		(pts
+			(xy 50.8 146.05) (xy 52.07 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1b6a3c72-5f1b-4a6e-b651-4e8bf7b2669f")
+	)
+	(wire
+		(pts
 			(xy 227.33 107.95) (xy 228.6 107.95)
 		)
 		(stroke
@@ -1843,7 +1865,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 133.35) (xy 52.07 135.89)
+			(xy 52.07 133.35) (xy 52.07 146.05)
 		)
 		(stroke
 			(width 0)
@@ -2173,6 +2195,16 @@
 	)
 	(wire
 		(pts
+			(xy 53.34 53.34) (xy 54.61 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8eb9403f-799a-42cf-8b0e-c07f61edd9aa")
+	)
+	(wire
+		(pts
 			(xy 204.47 86.36) (xy 204.47 87.63)
 		)
 		(stroke
@@ -2323,7 +2355,7 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 69.85) (xy 54.61 72.39)
+			(xy 54.61 49.53) (xy 54.61 53.34)
 		)
 		(stroke
 			(width 0)
@@ -2370,6 +2402,16 @@
 			(type default)
 		)
 		(uuid "d96dd80a-b00c-4ea2-b3f1-957ae5e33580")
+	)
+	(wire
+		(pts
+			(xy 54.61 53.34) (xy 54.61 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dbe3365f-87eb-4d11-9409-1b41decee423")
 	)
 	(wire
 		(pts
@@ -2503,6 +2545,16 @@
 	)
 	(wire
 		(pts
+			(xy 46.99 53.34) (xy 48.26 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f5fc15ac-f2a5-4d3c-a51f-27e5aa2d817f")
+	)
+	(wire
+		(pts
 			(xy 165.1 76.2) (xy 165.1 91.44)
 		)
 		(stroke
@@ -2510,6 +2562,16 @@
 			(type default)
 		)
 		(uuid "f6d79736-b59a-45d6-9e27-18571e5c6492")
+	)
+	(wire
+		(pts
+			(xy 52.07 146.05) (xy 52.07 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f84a2a8a-ff28-4f72-8b86-be036fa06041")
 	)
 	(wire
 		(pts
@@ -2521,9 +2583,19 @@
 		)
 		(uuid "f9853d73-4c5f-46f8-a8f3-7791336b42ee")
 	)
+	(wire
+		(pts
+			(xy 44.45 146.05) (xy 45.72 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9d07b45-cec4-4031-9817-1977617823de")
+	)
 	(hierarchical_label "POWER3V3"
 		(shape input)
-		(at 52.07 135.89 270)
+		(at 52.07 151.13 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2622,7 +2694,7 @@
 	)
 	(hierarchical_label "POWER3V3"
 		(shape input)
-		(at 54.61 69.85 90)
+		(at 54.61 49.53 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2748,6 +2820,71 @@
 			(project ""
 				(path "/387b6079-e547-4b62-84b5-51a54c04db0a/6ab2fcd6-dc45-4780-a3f0-603f19017a4d"
 					(reference "#PWR023")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDA")
+		(at 46.99 53.34 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "03da1188-c5a4-41ef-bb58-a04e1f3a2635")
+		(property "Reference" "#PWR0137"
+			(at 40.64 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GNDA"
+			(at 41.656 53.34 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 46.99 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 46.99 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
+			(at 46.99 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0d9dfc78-3916-4691-9b7f-f1e873044225")
+		)
+		(instances
+			(project "dac_board"
+				(path "/387b6079-e547-4b62-84b5-51a54c04db0a/6ab2fcd6-dc45-4780-a3f0-603f19017a4d"
+					(reference "#PWR0137")
 					(unit 1)
 				)
 			)
@@ -3416,6 +3553,74 @@
 			(project ""
 				(path "/387b6079-e547-4b62-84b5-51a54c04db0a/6ab2fcd6-dc45-4780-a3f0-603f19017a4d"
 					(reference "#PWR033")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 50.8 53.34 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "34b7de68-6e75-481c-a19c-db9937065eec")
+		(property "Reference" "C78"
+			(at 50.7936 46.99 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 50.7936 49.53 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 50.8 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 50.8 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 50.8 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e7f8f821-90d3-4a33-8e84-06a2ffbbefd5")
+		)
+		(pin "2"
+			(uuid "6c25f049-f5a7-424a-91f6-28d4e012f80d")
+		)
+		(instances
+			(project "dac_board"
+				(path "/387b6079-e547-4b62-84b5-51a54c04db0a/6ab2fcd6-dc45-4780-a3f0-603f19017a4d"
+					(reference "C78")
 					(unit 1)
 				)
 			)
@@ -4598,6 +4803,71 @@
 	)
 	(symbol
 		(lib_id "power:GNDA")
+		(at 44.45 146.05 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b623316e-3a54-4aae-9d62-1a032aebd76b")
+		(property "Reference" "#PWR0138"
+			(at 38.1 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GNDA"
+			(at 39.116 146.05 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 44.45 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 44.45 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
+			(at 44.45 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cc2cdd05-0c98-48f5-b0ee-29ea63899a3a")
+		)
+		(instances
+			(project "dac_board"
+				(path "/387b6079-e547-4b62-84b5-51a54c04db0a/6ab2fcd6-dc45-4780-a3f0-603f19017a4d"
+					(reference "#PWR0138")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDA")
 		(at 29.21 100.33 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5206,6 +5476,74 @@
 			(project ""
 				(path "/387b6079-e547-4b62-84b5-51a54c04db0a/6ab2fcd6-dc45-4780-a3f0-603f19017a4d"
 					(reference "IC1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 48.26 146.05 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e9499b7b-48cb-4fa5-94e7-54c1c3021965")
+		(property "Reference" "C79"
+			(at 48.2536 139.7 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 48.2536 142.24 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 48.26 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 48.26 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 48.26 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e75dd580-8d4a-4eec-ac8d-ef374305ad13")
+		)
+		(pin "2"
+			(uuid "c6a09b8c-e154-4e0c-b23a-e3147ff4ad29")
+		)
+		(instances
+			(project "dac_board"
+				(path "/387b6079-e547-4b62-84b5-51a54c04db0a/6ab2fcd6-dc45-4780-a3f0-603f19017a4d"
+					(reference "C79")
 					(unit 1)
 				)
 			)

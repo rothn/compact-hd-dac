@@ -21,4 +21,8 @@
   (lib (name "AP64350SP")(type "KiCad")(uri "${KIPRJMOD}/part_libraries/AP64350SP")(options "")(descr ""))
   (lib (name "EA3036CQBR.3dshapes")(type "KiCad")(uri "${KIPRJMOD}/part_libraries/EA3036CQBR/EA3036CQBR.3dshapes")(options "")(descr ""))
   (lib (name "EA3036CQBR")(type "KiCad")(uri "${KIPRJMOD}/part_libraries/EA3036CQBR/EA3036CQBR.pretty")(options "")(descr ""))
+  (lib (name "NUP2114UCMR6T1G")(type "KiCad")(uri "${KIPRJMOD}/part_libraries/NUP2114UCMR6T1G/NUP2114UCMR6T1G.pretty")(options "")(descr ""))
+  (lib (name "NUP2114UCMR6T1G.3dshapes")(type "KiCad")(uri "${KIPRJMOD}/part_libraries/NUP2114UCMR6T1G/NUP2114UCMR6T1G.3dshapes")(options "")(descr ""))
+  (lib (name "FSUSB242UCX")(type "KiCad")(uri "${KIPRJMOD}/part_libraries/FSUSB242UCX/FSUSB242UCX.pretty")(options "")(descr ""))
+  (lib (name "FSUSB242UCX.3dshapes")(type "KiCad")(uri "${KIPRJMOD}/part_libraries/FSUSB242UCX/FSUSB242UCX.3dshapes")(options "")(descr ""))
 )

@@ -795,6 +795,30 @@
     [
       "8716cc79-5762-4ae9-9a6b-fa319f305d62",
       "Low Voltage Power"
+    ],
+    [
+      "3f952bf3-f536-405d-a622-1708f21c9dad",
+      "Amplifier Output Stage"
+    ],
+    [
+      "ba721604-35d1-458a-9622-38dffd1599eb",
+      "Amplifier Output Stage1"
+    ],
+    [
+      "ba721604-35d1-458a-9622-38dffd1599eb",
+      "Amplifier Output Stage1"
+    ],
+    [
+      "9e676f03-06cd-4287-bd1a-11f9dc268f15",
+      "Amplifier Output Stage2"
+    ],
+    [
+      "9e676f03-06cd-4287-bd1a-11f9dc268f15",
+      "Amplifier Output Stage2"
+    ],
+    [
+      "3f952bf3-f536-405d-a622-1708f21c9dad",
+      "Amplifier Output Stage"
     ]
   ],
   "text_variables": {}
